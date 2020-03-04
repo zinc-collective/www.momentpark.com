@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - run:
+          name: update-npm
+          command: 'sudo npm install -g npm@6'
+      - run:
+          name: install-npm-packages
+          command: npm install
+      - run:
+          name: build-static-site
+          command: npx @11ty/eleventy --pathprefix=www.momentpark.com
+workflows:
+  version: 2
+  deploy_gh_pages:
+    jobs:
+      - build
