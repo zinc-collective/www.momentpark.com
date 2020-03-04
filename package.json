@@ -1,0 +1,31 @@
+{
+  "name": "www.momentpark.com",
+  "version": "1.0.0",
+  "description": "Your Moments, Captured. Better Photos and Video for Everyone",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "npx @11ty/eleventy --input=src --output=_site",
+    "dev": "npx @11ty/eleventy --input=src --output=_site --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinc-collective/www.momentpark.com.git"
+  },
+  "keywords": [
+    "photography",
+    "videography",
+    "static-site"
+  ],
+  "author": "Zinc.Coop <momentpark@zinc.coop>",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/zinc-collective/www.momentpark.com/issues"
+  },
+  "homepage": "https://github.com/zinc-collective/www.momentpark.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "postcss": "^7.0.27"
+  }
+}
