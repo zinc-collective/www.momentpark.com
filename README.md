@@ -15,3 +15,21 @@ They are currently freely available for personal use; with a compiled and signed
 - **CrossProcess** - ([buy](https://apps.apple.com/us/app/cross-process/id355754066), [compile and run](https://github.com/zinc-collective/mp-crossprocess)) - Cross-processing is one of the most fun and accessible techniques for film photography afficianados. Now you can do it right from your phone, with a high degree of algorithmic realism. CrossProcess mostly works on existing phones, but does not yet compile particularly easily and has some rendering artifacts on iPhones with a notch. Help wanted!
 
 - **NoirPhoto** - ([buy](https://apps.apple.com/us/app/noir-photo/id429484353), [compile and run](https://github.com/zinc-collective/mp-noirphoto)) - If you want that 20s look; you've come to the right place. Dramatic lighting, focal points, and contrast all come together in a tight and intuitive user interface. CrossProcess mostly works on existing phones, but does not yet compile particularly easily and has some rendering artifacts on iPhones with a notch. Help wanted!
+
+## Development Setup
+
+This site is build using [Eleventy](http://11ty.dev/).
+
+### Prerequisite:
+
+Please install node & npm.
+
+[Node Version Manager](https://github.com/nvm-sh/nvm) is recommended for easy NodeJS version management.
+
+Run the following command to start developing.
+```
+# Install all node dependencies
+npm i
+# Start development server
+npm start
+```
