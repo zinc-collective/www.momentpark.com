@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "build": "npx @11ty/eleventy --input=src --output=_site",
-    "dev": "npx @11ty/eleventy --input=src --output=_site --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "dev": "eleventy --serve"
   },
   "repository": {
     "type": "git",

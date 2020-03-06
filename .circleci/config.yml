@@ -20,7 +20,9 @@ jobs:
       - run:
           name: deploy-gh-pages
           command: |
+            find . -maxdepth 1 ! -name dist ! -name . ! -name .git | xargs rm -rf
             mv dist/*  .
+            rm -rf dist/
             git config user.email "ci-build@zinc.coop"
             git config user.name "ci-build"
             git checkout -B gh-pages
