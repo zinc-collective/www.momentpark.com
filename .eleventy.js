@@ -18,7 +18,6 @@ module.exports = function(config) {
     templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    passthroughFileCopy: true,
-    pathPrefix: "/www.momentpark.com/"
+    passthroughFileCopy: true
   }
 }
