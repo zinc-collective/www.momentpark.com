@@ -7,6 +7,7 @@ module.exports = function(config) {
 
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
+  config.addPassthroughCopy("./src/site/fonts");
 
   return {
     dir: {
@@ -17,6 +18,6 @@ module.exports = function(config) {
     templateFormats: ["html", "njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
   }
 }
