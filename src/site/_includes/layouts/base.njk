@@ -15,14 +15,16 @@ bodyClass: "leading-normal tracking-normal text-gray-900"
     <div class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <header>
         <h1 class="text-3xl">{{ title }}</h1>
-        {%- if subtitle %}<p class="subtitle">{{ subtitle | safe }}</p>{% endif %}
       </header>
+
+      {%- if subtitle %}<h2 class="subtitle">{{ subtitle | safe }}</h2>{% endif %}
       {{ content | safe }}
+
       <footer class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
-      <p><i class="cc cc-cc"></i><i class="cc cc-by"></i><i class="cc cc-sa"></i></p>
-      <p>Except where otherwise noted, content on this site is licensed under a <a rel="license"
-          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International
-          License</a>.</p>
+        <p><i class="cc cc-cc"></i><i class="cc cc-by"></i><i class="cc cc-sa"></i></p>
+        <p>Except where otherwise noted, content on this site is licensed under a <a rel="license"
+            href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International
+            License</a>.</p>
       </footer>
     </div>
   </body>
